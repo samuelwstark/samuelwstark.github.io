@@ -5,45 +5,71 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <meta charset="utf-8">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
 </head>
+
 <body>
+  <div class="content">
+    <section class="top-nav">
+      <div>
+        <a href="https://people.math.ethz.ch/~sstark/"> SAMUEL STARK </a>
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+      <ul class="menu">
+        <li><a href="https://people.math.ethz.ch/~sstark/research.html"> RESEARCH </a></li>
+        <li> 	&#8727; </li>
+        <li><a href="https://people.math.ethz.ch/~sstark/notes.html"> NOTES  </a></li>
+        <li> 	&#8727; </li>
+        <li><a href="https://people.math.ethz.ch/~sstark/links.html"> LINKS </a></li>
+      </ul>
+    </section>
 
-  <div class="marg">
+    <hr>
+    <p style="margin-bottom:0.75cm;"></p>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async
-          src="<https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
+    
+  <div class="row">
+    <div class="c1">
+      <a href="https://people.math.ethz.ch/~rahul/ZuriB1.jpg">
+        <img src="m.jpg" alt="Samuel" style="width:200px;height:300px;"></a>
+    </div>
+    <div class="c2">
+      I am currently a postdoc of <a href="https://people.math.ethz.ch/~rahul/" class="a2"> Rahul Pandharipande</a> at ETH Zürich. <br>
+      Before that I was a research student of <a href="https://www.ma.imperial.ac.uk/~rpwt/" class="a2">Richard Thomas</a> 
+      at <a href="https://www.mathgenealogy.org/id.php?id=282248" class="a2">Imperial College</a>; <br>
+      I submitted my thesis on the 1st of December 2021, and passed my viva (without corrections) on the 24th of February 2022. <br> <br>
+      My research is concerned with the geometry (broadly construed) of sheaf-theoretic moduli spaces, especially their intersection theory. <br>
+      Right now, my focus lies on the volumes of Quot schemes. This investigation is guided by two closely related examples. <br> <br>
+      
+      On the one hand, the volume of the Grassmannian Gr(k,n) of k-dimensional subspaces in C<sup>n</sup> is (k(n-k))! &#8719; (j-1)!/(n-j)!, where the product 
+      is taken over all 1 &#x2264; j &#x2264; k. This formula, which is due to Schubert, also has an enumerative interpretation; in the simplest nontrivial case (n = 4, k = 2), it gives the number of
+      lines in projective 3-space which meet four given generic lines. <br> <br>
 
-<div class="content">
+      On the other hand, consider a curve C of genus g, and the moduli space U<sub>C</sub>(r,O) of semistable vector bundles over C with rank r and trivial determinant. 
+      <a href="https://projecteuclid.org/journals/communications-in-mathematical-physics/volume-141/issue-1/On-quantum-gauge-theories-in-two-dimensions/cmp/1104248198.full" class="a2">Witten</a> gave a formula for the volume of U<sub>C</sub>(r,O) 
+      in terms of the volume of SU(r) and the series &sum; (dim &rho;)<sup>2-2g</sup>,
+      which is taken over the irreducible representations &rho; of SU(r). <br> <br>
+      In a completely different direction, I am also interested in random matrix theory and time series analysis.
+    </div>
+  </div>
 
-<h2>Samuel Stark, ETH Zürich</h2>
-<p>samuel.stark<span style="display:none">foo</span>@math.ethz.ch</p>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<div class="topnav" id="myTopnav">
-  <a href="#home" class="active">ABOUT</a>
-  <a href="#news">RESEARCH</a>
-  <a href="#contact">Teaching</a>
-  <a href="#about">Notes</a>
-  <a href="#about">Links</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
+    <p style="margin-bottom:1cm;"></p>
+    <hr align="left">
+    <footer>
+      <p style="text-align:left;">
+        samuel.stark<span style="display:none">foo</span>@math.ethz.ch
+        <span style="float:right;">
+        Last updated: 5th December 2022
+    </span>
+    </p>
+    </footer>
+    </div>
 </div>
 </body>
 </html> 
